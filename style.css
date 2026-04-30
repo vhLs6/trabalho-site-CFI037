@@ -102,10 +102,10 @@ nav {
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    background-color: transparent;
+    background-color: white;
     border-radius: 30px;
     padding: 10px;
-    filter: opacity(0.8);
+    filter: opacity(0.9);
 }
 
 .biologia {
@@ -130,12 +130,14 @@ nav {
 }
 
 
-
+/* CONFIURAÇÕES PARA TELA DE CELULAR */
 
 @media (max-width: 768px) {
     body {
-        background-color: white;
+        background-color: aliceblue;
     }
+
+    /* CABEÇALHO */
 
     header {
         display: flex;
@@ -159,6 +161,8 @@ nav {
     .Img1 {
         transform: rotate(45deg);
     }
+
+    /* NAVEGAÇÃO */
 
     .materias {
         text-transform: uppercase;
@@ -208,6 +212,8 @@ nav {
         background-color: orange;
     }
 
+    /* SESSÕES */
+
     .secao {
         margin-top: 20px;
         border-radius: 30px;
@@ -238,18 +244,40 @@ nav {
         flex-direction: column;
         align-items: stretch;
         width: 100%;
+        background-color: transparent;
     }
+
     .caixa1 {
         margin-bottom: 25px;
+        text-align: center;
     }
-    .caixa1, .caixa2 {
-        font-size: 20px;
-        background-color: white;
+
+    .estudar {
+        background-color: orchid;
+        text-decoration: none;
+        color: black;
+        border: 1px solid;
         border-radius: 30px;
         padding: 5px;
-        filter: opacity(0.8);
+    }
+    .estudar:hover {
+        background-color: purple;
+    }
+    
+    .caixa1,
+    .caixa2 {
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 30px;
+        padding: 5px;
         flex: 1;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); 
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+        transition: 0.3s;
+    }
+
+    .caixa1:hover,
+    .caixa2:hover {
+        scale: 1.05;
     }
 
     .biologia {
