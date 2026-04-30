@@ -1,6 +1,8 @@
 body {
-    background-color: whitesmoke;
+    background: linear-gradient(90deg, #a5ffe7, #fff, #a5ffe7);
 }
+
+/* CABEÇALHO */
 
 header {
     display: flex;
@@ -24,6 +26,8 @@ header img {
 .Img1 {
     transform: rotate(45deg);
 }
+
+/* MENU */
 
 .materias {
     text-transform: uppercase;
@@ -73,7 +77,7 @@ nav {
     background-color: orange;
 }
 
-/* SESSÇâo */
+/* SESSÃO */
 
 .secao {
     margin-top: 20px;
@@ -116,43 +120,31 @@ nav {
 .estudar3 {
     text-decoration: none;
     color: black;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 30px;
     padding: 5px;
 }
 
 .estudar1 {
-    background-color: orchid;
+    background-color: transparent;
 }
 
 .estudar2 {
-    background-color: lightgreen;
+    background-color: transparent;
 }
 
 .estudar3 {
-    background-color: orange;
-}
-
-.estudar1:hover {
-    background-color: purple;
-}
-
-.estudar2:hover {
-    background-color: green;
-}
-
-.estudar3:hover {
-    background-color: orangered;
+    background-color: transparent;
 }
 
 .caixa1,
 .caixa2 {
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
     padding: 5px;
     flex: 1;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
     transition: 0.3s;
 }
 
@@ -169,7 +161,7 @@ nav {
 }
 
 .quimica {
-    background-image: url('qui.webp');
+    background-image: url('quimica2.png');
     background-repeat: no-repeat;
     background-size: cover;
     border: 5px solid darkgreen;
@@ -182,197 +174,74 @@ nav {
     border: 5px solid orange;
 }
 
+.topicos {
+    padding-left: 20px;
+}
+
+/* RODAPÉ */
+.voltar {
+    margin-top: 20px;
+    text-align: center;
+    background-color: skyblue;
+    border: 5px solid rgba(98, 179, 245, 1);
+    border-radius: 75px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.botaovoltar {
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: skyblue;
+    border: 5px solid rgba(98, 179, 245, 1);
+    border-radius: 75px;
+}
 
 /* CONFIURAÇÕES PARA TELA DE CELULAR */
 
 @media (max-width: 768px) {
-    body {
-        background-color: aliceblue;
-    }
-
-    /* CABEÇALHO */
-
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: skyblue;
-        border: 5px solid rgba(98, 179, 245, 1);
-        border-radius: 75px
-    }
 
     header h1 {
         font-size: 25px;
-        text-transform: uppercase;
-        color: white;
     }
 
     header img {
         width: 50px;
     }
 
-    .Img1 {
-        transform: rotate(45deg);
-    }
-
-    /* NAVEGAÇÃO */
-
-    .materias {
-        text-transform: uppercase;
-        font-size: 30px;
-        text-decoration: none;
-    }
-
-    .b:link,
-    .b:visited {
-        color: purple
-    }
-
-    .q:link,
-    .q:visited {
-        color: darkgreen
-    }
-
-    .f:link,
-    .f:visited {
-        color: orange
-    }
-
-    nav {
-        display: block;
-        align-items: center;
-        text-align: center;
-        background-color: skyblue;
-        border: 5px solid rgba(98, 179, 245, 1);
-        border-radius: 75px;
-        width: fit-content;
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        word-spacing: 50px;
-        padding: 15px 20px 15px 20px;
-    }
-
-    .biologia {
-        background-color: orchid;
-    }
-
-    .quimica {
-        background-color: greenyellow;
-    }
-
-    .fisica {
-        background-color: orange;
-    }
-
-    /* SESSÕES */
-
-    .secao {
-        margin-top: 20px;
-        border-radius: 30px;
-        align-items: center;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        color: black;
-    }
-
     .titulo {
-        margin-top: 0;
-        margin-bottom: 0;
         font-size: 60px;
-        text-align: center;
-        color: white;
     }
 
     .conteudo {
-        display: flex;
         flex-direction: row;
-        padding: 20px;
         align-items: center;
     }
 
     .texto {
-        display: flex;
         flex-direction: column;
         align-items: stretch;
-        width: 100%;
     }
 
     .caixa1 {
         margin-bottom: 25px;
-        text-align: center;
     }
 
-    .estudar1,
-    .estudar2,
-    .estudar3 {
-        text-decoration: none;
-        color: black;
-        border: 1px solid;
-        border-radius: 30px;
-        padding: 5px;
+    footer {
+        line-height: 20px;
+        font-size: 15px;
     }
 
-    .estudar1 {
-        background-color: orchid;
+    .botaovoltar {
+        font-size: 25px;
     }
-
-    .estudar2 {
-        background-color: lightgreen;
-    }
-
-    .estudar3 {
-        background-color: orange;
-    }
-
-    .estudar1:hover {
-        background-color: purple;
-    }
-
-    .estudar2:hover {
-        background-color: green;
-    }
-
-    .estudar3:hover {
-        background-color: orangered;
-    }
-
-    .caixa1,
-    .caixa2 {
-        font-size: 20px;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 30px;
-        padding: 5px;
-        flex: 1;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-        transition: 0.3s;
-    }
-
-    .caixa1:hover,
-    .caixa2:hover {
-        scale: 1.05;
-    }
-
-    .biologia {
-        background-image: url('bio.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 5px solid purple;
-    }
-
-    .quimica {
-        background-image: url('qui.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 5px solid darkgreen;
-    }
-
-    .fisica {
-        background-image: url('fis.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 5px solid orange;
-    }
-
 }
