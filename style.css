@@ -235,11 +235,13 @@ nav {
 
     .texto {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: stretch;
         width: 100%;
     }
-    
+    .caixa1 {
+        margin-bottom: 25px;
+    }
     .caixa1, .caixa2 {
         font-size: 20px;
         background-color: white;
@@ -247,7 +249,6 @@ nav {
         padding: 5px;
         filter: opacity(0.8);
         flex: 1;
-        margin: 3px;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); 
     }
 
