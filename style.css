@@ -1,18 +1,29 @@
 body {
-    background: linear-gradient(90deg, #a5ffe7, #fff, #a5ffe7);
+    background: white;
+    margin: 0;
 }
 
 /* CABEÇALHO */
 
 header {
+    background-color: gray;
+    border: 0 0 5px 5px solid lightgray;
+    border-radius: 0 0 200px 200px;
+}
+.topo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: skyblue;
-    border: 5px solid rgba(98, 179, 245, 1);
-    border-radius: 75px
 }
-
+.materias1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
 header h1 {
     font-size: 65px;
     text-transform: uppercase;
@@ -37,44 +48,17 @@ header img {
 
 .b:link,
 .b:visited {
-    color: purple
+    color: white
 }
 
 .q:link,
 .q:visited {
-    color: darkgreen
+    color: white
 }
 
 .f:link,
 .f:visited {
-    color: orange
-}
-
-nav {
-    display: block;
-    align-items: center;
-    text-align: center;
-    background-color: skyblue;
-    border: 5px solid rgba(98, 179, 245, 1);
-    border-radius: 75px;
-    width: fit-content;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    word-spacing: 50px;
-    padding: 15px 20px 15px 20px;
-}
-
-.biologia {
-    background-color: orchid;
-}
-
-.quimica {
-    background-color: greenyellow;
-}
-
-.fisica {
-    background-color: orange;
+    color: white
 }
 
 /* SESSÃO */
@@ -157,21 +141,21 @@ nav {
     background-image: url('bio.png');
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid purple;
+    border: 5px solid black;
 }
 
 .quimica {
     background-image: url('quimica2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid darkgreen;
+    border: 5px solid black;
 }
 
 .fisica {
     background-image: url('fis.png');
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid orange;
+    border: 5px solid black;
 }
 
 .topicos {
@@ -182,8 +166,8 @@ nav {
 .voltar {
     margin-top: 20px;
     text-align: center;
-    background-color: skyblue;
-    border: 5px solid rgba(98, 179, 245, 1);
+    background-color: gray;
+    border: 5px solid lightgray;
     border-radius: 75px;
     width: 50%;
     margin-left: auto;
@@ -201,9 +185,12 @@ nav {
 footer {
     margin-top: 20px;
     text-align: center;
-    background-color: skyblue;
-    border: 5px solid rgba(98, 179, 245, 1);
-    border-radius: 75px;
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 /* CONFIURAÇÕES PARA TELA DE CELULAR */
@@ -211,9 +198,11 @@ footer {
 @media (max-width: 768px) {
 
     header h1 {
-        font-size: 25px;
+        font-size: 35px;
     }
-
+    .materias {
+        font-size: 23px;
+    }
     header img {
         width: 50px;
     }
