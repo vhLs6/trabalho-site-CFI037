@@ -39,6 +39,16 @@ h2 {
 h3 {
     font-size: 30px;
 }
+hr {
+    margin-top: 50px;
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    text-transform: uppercase;
+}
 @media (max-width: 768px) {
     *{
         font-size: 20px;
@@ -46,4 +56,11 @@ h3 {
     body {
         margin: 0;
     }
+    .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-transform: uppercase;
+}
 }
