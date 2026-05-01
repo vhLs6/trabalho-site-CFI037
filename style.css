@@ -1,29 +1,33 @@
 body {
-    background: white;
+    background-color: white;
     margin: 0;
 }
 
 /* CABEÇALHO */
 
 header {
-    background-color: gray;
-    border: 0 0 5px 5px solid lightgray;
-    border-radius: 0 0 200px 200px;
+    background-color: rgba(158, 158, 158, 0.76);
+    border-bottom: 5px solid black;
 }
+
 .topo {
     display: flex;
     justify-content: center;
 }
+
 .materias1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    padding-bottom: 10px;
 }
+
 nav {
     display: flex;
     flex-direction: column;
 }
+
 header h1 {
     font-size: 65px;
     text-transform: uppercase;
@@ -62,6 +66,24 @@ header img {
 }
 
 /* SESSÃO */
+.botaolivro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 5px;
+    gap: 0;
+    width: fit-content;
+    margin: auto;
+}
+
+.livro {
+    width: 30px;
+    padding-left: 10px;
+}
 
 .secao {
     margin-top: 20px;
@@ -104,9 +126,7 @@ header img {
 .estudar3 {
     text-decoration: none;
     color: black;
-    border: 2px solid;
-    border-radius: 30px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .estudar1 {
@@ -138,23 +158,26 @@ header img {
 }
 
 .biologia {
-    background-image: url('bio.png');
+    background-image: url('biologia.png');
     background-repeat: no-repeat;
     background-size: cover;
     border: 5px solid black;
+    background-position-y: center;
 }
 
 .quimica {
-    background-image: url('quimica2.png');
+    background-image: url('quimica.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: center;
     border: 5px solid black;
 }
 
 .fisica {
-    background-image: url('fis.png');
+    background-image: url('fisica.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: center;
     border: 5px solid black;
 }
 
@@ -166,7 +189,7 @@ header img {
 .voltar {
     margin-top: 20px;
     text-align: center;
-    background-color: gray;
+    background-color: rgba(158, 158, 158, 0.76);
     border: 5px solid lightgray;
     border-radius: 75px;
     width: 50%;
@@ -200,9 +223,11 @@ footer {
     header h1 {
         font-size: 35px;
     }
+
     .materias {
         font-size: 23px;
     }
+
     header img {
         width: 50px;
     }

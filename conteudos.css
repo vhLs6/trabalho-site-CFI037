@@ -1,0 +1,29 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+.img1 {
+    width: 300px;
+}
+.img2 {
+    width: 500px;
+}
+.titulo{
+    color: purple;
+}
+.subtitulo {
+    color: orange;
+}
+.obs {
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+td, th {
+    border: 2px solid;
+}
+@media (max-width: 768px) {
+    *{
+        font-size: 20px;
+    }
+}
