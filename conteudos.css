@@ -8,7 +8,9 @@ body {
     margin-left: 50px;
     margin-right: 50px;
 }
-
+b, i {
+    font-size: 25px;
+}
 img {}
 
 .img1 {

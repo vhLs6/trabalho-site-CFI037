@@ -1,0 +1,9 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}   
+    th, tr, td {
+    border: 2px solid;
+}
+table {
+    border-collapse: collapse;
+}
