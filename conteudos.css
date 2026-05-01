@@ -22,6 +22,9 @@
 td, th {
     border: 2px solid;
 }
+table {
+    border-collapse: collapse;
+}
 @media (max-width: 768px) {
     *{
         font-size: 20px;
