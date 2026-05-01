@@ -38,7 +38,9 @@ th {
     border: 2px solid;
     font-size: 25px;
 }
-
+.container-table {
+    overflow-x: auto;
+}
 table {
     border-collapse: collapse;
 }
@@ -68,7 +70,7 @@ hr {
 }
 
 img {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
 }
 
@@ -85,7 +87,11 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 25px;
         text-transform: uppercase;
+        flex-direction: column;
+    }
+    .link2 {
+        margin-bottom: 10px;
     }
 }
